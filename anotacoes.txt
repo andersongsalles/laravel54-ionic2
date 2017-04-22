@@ -1,0 +1,23 @@
+Anotações do curso. fazer aula 26
+
+Configuração do GitBash no commander cmder:
+
+“%ProgramFiles%\Git\bin\sh.exe” --login -i  -new_console:d:%USERPROFILE%
+
+
+comandos
+
+****Migration****
+php artisan make:migration add_role_to_users_table --table=users
+
+**** Criar notificação
+php artisan make:notification DefaultResetPasswordNotification
+***publicar arquivo
+php artisan vendor:publish --tag=laravel-notifications
+
+*** Controller
+php artisan make:controller Admin\UsersController --resource --model=CodeFlix\Models\Users
+
+*** Bootstrapper
+https://github.com/patricktalmadge/bootstrapper
+ composer require patricktalmadge/bootstrapper:5.10
